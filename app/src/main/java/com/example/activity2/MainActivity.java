@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton button2 = findViewById(R.id.buttonAndroid);
         ImageButton button3 = findViewById(R.id.buttonCheck);
         ImageButton button4 = findViewById(R.id.buttonStarSilver);
+        Button buttonExit = findViewById(R.id.buttonExit);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 moveToSecondActivity(imagen4);
+            }
+        });
+        buttonExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finishAffinity();
+                System.exit(0);
             }
         });
     }
