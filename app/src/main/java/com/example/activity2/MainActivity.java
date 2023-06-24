@@ -32,32 +32,32 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                moveToSecondActivity(button1);
+                moveToSecondActivity(imagen1);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                moveToSecondActivity(button2);
+                moveToSecondActivity(imagen2);
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                moveToSecondActivity(button3);
+                moveToSecondActivity(imagen3);
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                moveToSecondActivity(button4);
+                moveToSecondActivity(imagen4);
             }
         });
     }
 
-    public void moveToSecondActivity(ImageButton button1) {
+    public void moveToSecondActivity(int img) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        intent.putExtra("Clave",imagen1);
+        intent.putExtra("Clave", img);
         startActivity(intent);
 
     }

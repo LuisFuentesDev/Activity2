@@ -9,10 +9,10 @@
 
     <ImageButton
         android:id="@+id/buttonStar"
-        android:layout_width="111dp"
-        android:layout_height="122dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="248dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="204dp"
         android:contentDescription="Cruz"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,20 +20,20 @@
 
     <ImageButton
         android:id="@+id/buttonAndroid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="36dp"
         android:contentDescription="Andy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toEndOf="@+id/buttonStar"
         app:layout_constraintTop_toTopOf="@+id/buttonStar"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <ImageButton
         android:id="@+id/buttonCheck"
-        android:layout_width="99dp"
-        android:layout_height="123dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="28dp"
         android:contentDescription="User"
         app:layout_constraintEnd_toEndOf="@+id/buttonStar"
@@ -44,8 +44,8 @@
 
     <ImageButton
         android:id="@+id/buttonStarSilver"
-        android:layout_width="122dp"
-        android:layout_height="130dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:contentDescription="Head"
         app:layout_constraintBottom_toBottomOf="@+id/buttonCheck"
         app:layout_constraintEnd_toEndOf="@+id/buttonAndroid"

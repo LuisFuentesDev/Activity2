@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class SecondActivity extends AppCompatActivity {
@@ -23,9 +24,9 @@ public class SecondActivity extends AppCompatActivity {
         int idImagen = intentGet.getIntExtra("Clave",0);
         Log.d("secondActivity",String.valueOf(idImagen));
 
-        ImageView imageButton = findViewById(R.id.imageView);
+        ImageButton imageButton = findViewById(R.id.imageSecond);
 
-        imageButton.setImageResource(R.drawable.idImagen);
+        imageButton.setImageResource(idImagen);
     }
 
     private void initListeners() {
